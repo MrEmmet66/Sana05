@@ -8,6 +8,26 @@ namespace Sana05.Models
 {
     public class Product
     {
+        public Product(string name, decimal price, Currency cost, int quantity, string producer, float weight)
+        {
+            this.name = name;
+            this.price = price;
+            this.cost = cost;
+            this.quantity = quantity;
+            this.producer = producer;
+            this.weight = weight;
+        }
+        public Product(string name, Currency cost, int quantity, string producer, float weight)
+        {
+            this.name = name;
+            this.cost = cost;
+            this.quantity = quantity;
+            this.producer = producer;
+            this.weight = weight;
+        }
+        public Product(Product product) : this(product.name, product.price, product.cost, product.quantity, product.producer, product.weight) { }
+        public Product() { }
+
         protected string name;
         protected decimal price;
         protected Currency cost;
