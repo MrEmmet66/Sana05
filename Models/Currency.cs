@@ -8,5 +8,7 @@ namespace Sana05.Models
 {
     public class Currency
     {
+        protected string name;
+        protected decimal exRate;
     }
 }
