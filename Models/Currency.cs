@@ -22,5 +22,16 @@ namespace Sana05.Models
 
         protected string name;
         protected decimal exRate;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public decimal ExRate
+        {
+            get { return exRate; }
+            set { exRate = value; }
+        }
     }
 }
