@@ -66,5 +66,19 @@ namespace Sana05.Models
             set { weight = value; }
         }
 
+        public decimal GetPriceInUAH()
+        {
+            return price * cost.ExRate;
+        }
+
+        public decimal GetTotalPriceInUAH()
+        {
+            return GetPriceInUAH() * quantity;
+        }
+
+        public float GetTotalWeight()
+        {
+            return weight * quantity;
+        }
     }
 }
