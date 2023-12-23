@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sana05
+namespace Sana05.Models
 {
-    internal class Product
+    public class Product
     {
     }
 }
