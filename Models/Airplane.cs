@@ -30,6 +30,26 @@ namespace Sana05.Models
         protected MyDate startDate;
         protected MyDate finishDate;
 
+        public string StartCity
+        {
+            get { return startCity; }
+            set { startCity = value; }
+        }
+        public string FinishCity
+        {
+            get { return finishCity; }
+            set { finishCity = value; }
+        }
+        public MyDate StartDate
+        {
+            get { return startDate; }
+            set { startDate = value; }
+        }
+        public MyDate FinishDate
+        {
+            get { return finishDate; }
+            set { finishDate = value; }
+        }
 
     }
 }
