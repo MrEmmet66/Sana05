@@ -32,6 +32,31 @@ namespace Sana05.Models
         protected int hour;
         protected int minute;
 
+        public int Year
+        {
+            get { return year; }
+            set { year = value; }
+        }
+        public int Month
+        {
+            get { return month; }
+            set { month = value; }
+        }
+        public int Day
+        {
+            get { return day; }
+            set { day = value; }
+        }
+        public int Hour
+        {
+            get { return hour; }
+            set { hour = value; }
+        }
+        public int Minute
+        {
+            get { return minute; }
+            set { minute = value; }
+        }
 
     }
 }
