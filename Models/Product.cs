@@ -34,5 +34,37 @@ namespace Sana05.Models
         protected int quantity;
         protected string producer;
         protected float weight;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public decimal Price
+        {
+            get { return price; }
+            set { price = value; }
+        }
+        public Currency Cost
+        {
+            get { return cost; }
+            set { cost = value; }
+        }
+        public int Quantity
+        {
+            get { return quantity; }
+            set { quantity = value; }
+        }
+        public string Producer
+        {
+            get { return producer; }
+            set { producer = value; }
+        }
+        public float Weight
+        {
+            get { return weight; }
+            set { weight = value; }
+        }
+
     }
 }
