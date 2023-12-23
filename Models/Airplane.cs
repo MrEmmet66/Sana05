@@ -51,5 +51,23 @@ namespace Sana05.Models
             set { finishDate = value; }
         }
 
+        public int GetTotalTime()
+        {
+            return (finishDate.Year - startDate.Year) * 365 * 24 * 60 +
+                (finishDate.Month - startDate.Month) * 30 * 24 * 60 +
+                (finishDate.Day - startDate.Day) * 24 * 60 +
+                (finishDate.Hour - startDate.Hour) * 60 +
+                (finishDate.Minute - startDate.Minute);
+        }
+
+        public bool IsArrivingtoday()
+        {
+            if (startDate.Year == finishDate.Year && startDate.Month == finishDate.Month && startDate.Day == finishDate.Day)
+            {
+                return true;
+            }
+            return false;
+        }
+
     }
 }
